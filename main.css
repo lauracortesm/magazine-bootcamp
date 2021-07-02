@@ -1,0 +1,9 @@
+.body__header{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.body__nav{
+    display: flex;
+    justify-content: space-between;
+}
