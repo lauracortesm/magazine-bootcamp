@@ -1,9 +1,209 @@
+@font-face {
+    font-family: 'Neue', sans-serif;
+    src: url('./fonts/NHaasGroteskTXPro-75Bd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('./fonts/Metropolis-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Metropolis-light';
+    src: url('./fonts/Metropolis-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Aptifer';
+    src: url('./fonts/Aptifer\ Slab\ LT\ Pro\ Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Bromello';
+    src: url('./fonts/bromello-Regular.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'Universe';
+    src: url('./fonts/Univers\ Next\ Pro\ Light.ttf') format('opentype');
+}
+
+.body__main__container{
+    background: url(./images/magazine-bk) no-repeat;
+    background-size: cover; 
+    height: 1255px;
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 60% 10%;
+    
+}
 .body__header{
     display: flex;
     flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+    height: 350px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 190px;
+    text-transform: uppercase;
+    line-height: 0.4em;
+    margin: 10px;
+}
+
+.body__header__h1-2{
+    text-transform: capitalize;
+    font-family: 'Bromello', cursive;
+    color: #101D2E;
+    font-size: 110px;
+    letter-spacing: 0.05em;
 }
 
 .body__nav{
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
+    margin: 10px 100px;
+    padding-top: 10px;
+}
+
+.body__nav__headings{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+    width: 175px;  
+    align-items: center;
+    line-height: 1.2em;
+ 
+}
+.body__nav__headings__bold{
+    font-weight: 700;
+}
+
+.vertical-line{ 
+    padding-top: 12px;
+    margin: 0 2%;
+    margin-top: 2%;
+    transform: rotate(-160deg); 
+    border-right: 1.5px solid #DC332C;
+    height: 30px;
+}
+.main__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
+    margin-top: 70px;
+}
+.main__aside__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+    width: 100%;
+    color: #101D2E;
+    
+}
+
+.main__aside__container__left{
+    display: flex;
+    justify-content: space-between;
+    display: block;
+    width: 20%;
+    
+    
+    
+}
+
+.main__aside__left__first__section{
+  
+    text-transform: capitalize;
+}
+
+.main__aside__left__first__section h2 {
+    font-family: 'Aptifer';
+    font-size: 40px;
+    width: 200px;
+    margin: 0;
+}
+.main__aside__left__first__section p{
+    font-family: 'Universe';
+    font-size: 22px;
+    width: 160px;
+    margin-top: 0;
+}
+
+.main__aside__left__list{
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 25px;
+    
+
+}
+
+.main__aside__left__list li:nth-child(1){
+    background-color: #DC332C;
+    color: #8ED3D8;
+    font-size: 10px;
+    width: 100px;
+    padding-left: 4px;
+    line-height: 2em;
+    font-family: 'Aptifer';
+}
+.main__aside__left__list h3{
+    border-bottom: 2px solid white;
+    font-size: 24px;
+    width: 153px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+
+}
+
+.capitalize-none{
+    text-transform: none;
+}
+
+
+.main__aside__second__section{
+    
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 1px solid #8ED3D8;
+    background-color: #DC332C;
+    transform: rotate(8deg);
+    color: white;
+    text-align: center;
+    
+}
+
+.main__aside__second__section h2{
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.main__aside__second__section p{
+    text-transform: capitalize;
+    font-family: 'Universe';
+    line-height: 1em;
+    font-size: 15px;
+    margin: 0 10px;
+
+}
+.main__aside__second__section p:nth-child(3){
+    margin-top: 10px;
+    color: #101D2E;
+}
+footer{
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Oxygen';
 }
